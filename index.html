@@ -84,7 +84,6 @@
             var reset = document.getElementById("reset");
             reset.addEventListener("click", clear);
 
-
             function getFreshGods() {
                 // Fetching the list of Gods straight from the source, means it's never out of date ;)
                 var xmlHttp = new XMLHttpRequest();
@@ -92,6 +91,12 @@
                 xmlHttp.send(null);
                 var resp = xmlHttp.responseText;
                 var decodedBody = JSON.parse(resp);
+                for(var i = (decodedBody.length - 1 ); i > 0; i--){
+                    const j = Math.floor(Math.random() * i)
+                    const temp = decodedBody[i]
+                    decodedBody[i] = decodedBody[j]
+                    decodedBody[j] = temp
+                }
                 return decodedBody;
             }
 
