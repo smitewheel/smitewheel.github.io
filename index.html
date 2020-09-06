@@ -37,10 +37,18 @@
                         <center><p>Warriors</p></center>
                     </div>
                     <div class="col-6-sm">
-                        <input class="buttons" type="button" value="Reset" id="reset"/>
+                        <input id="tiggzMode" class="buttons" type="button"/>
+                        <center><p>TiggzMode</p></center>
                     </div>
                 </div>
-                <input class="buttons" type="button" value="SPIN" id="spin" />
+                <div class="row">
+                    <div class="col-6-sm">
+                        <input class="buttons" type="button" value="Reset" id="reset"/>
+                    </div>
+                    <div class="col-6-sm">
+                        <input class="buttons" type="button" value="SPIN" id="spin" />  
+                    </div>
+                </div>
             </div>
             <div class="col-6-sm">
                 <canvas id="canvas" width="1000" height="1000"></canvas>
@@ -56,6 +64,24 @@
             </div>
         </div>
         <script>
+            const tiggzMode = [
+                "Agni", "Ah Muzen Cab", "Ah Puch", "Anhur", 
+                "Anubis", "Aphrodite", "Apollo", "Artemis",
+                "Baba Yaga", "Bastet", "Camazotz", "Cerberus",
+                "Cernunnos", "Chaac", "Chang'e", "Chernobog",
+                "Chiron", "Chronos", "Cupid", "Discordia",
+                "Fafnir", "Freya", "Geb", "Hachiman",
+                "He Bo", "Heimdallr", "Hera", "Hou Yi",
+                "Isis", "Izanami", "Janus", "Jing Wei",
+                "Khepri", "Kukulkan", "Kuzenbo", "Medusa",
+                "Merlin", "Ne Zha", "Neith", "Nox",
+                "Nu Wa", "Olorun", "Persephone", "Poseidon",
+                "Ra", "Raijin", "Rama", "Ravana",
+                "Scylla", "Skadi", "Sol", "Sylvanus",
+                "Thoth", "Vulcan", "Xbalanque", "Xing Tian",
+                "Yemoja", "Zeus",
+            ]
+
             var options = getFreshGods();
 
             var startAngle = 0;
@@ -81,6 +107,8 @@
             mages.addEventListener("click", filter);
             var warriors = document.getElementById("Warrior");
             warriors.addEventListener("click", filter);
+            var tiggz = document.getElementById("tiggzMode");
+            tiggz.addEventListener("click", enableTiggzMode);
             var reset = document.getElementById("reset");
             reset.addEventListener("click", clear);
 
@@ -191,6 +219,14 @@
                 toFilter = e.target.id;
                 options = options.filter(function(god) {
                     return god.role === " "+toFilter;
+                })
+                drawRouletteWheel();
+            }
+
+            function enableTiggzMode() {
+                options = getFreshGods();
+                options = options.filter(function(god){
+                    return tiggzMode.includes(god.name)
                 })
                 drawRouletteWheel();
             }

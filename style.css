@@ -50,6 +50,11 @@ input:focus{
   background: url("https://web2.hirez.com/smite-media//wp-content/uploads/2018/11/Warrior.png");
 }
 
+#tiggzMode{
+  background: url("./Cutesy_Izanami.png");
+  background-position: center;
+}
+
 #spin{
   width: 100%;
   color: white;
