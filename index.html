@@ -51,12 +51,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6-sm">
-                        <input class="buttons" type="button" value="Reset" id="reset"/>
-                    </div>
-                    <div class="col-6-sm">
-                        <input class="buttons" type="button" value="SPIN" id="spin" />  
-                    </div>
+                    <input class="buttons" type="button" value="Reset" id="reset"/>
+                </div>
+                <div class="row">
+                    <input class="buttons" type="button" value="SPIN" id="spin" />
                 </div>
             </div>
             <div class="col-6-sm">
@@ -239,7 +237,7 @@
             function spin() {
                 spinAngleStart = Math.random() * 10 + 10;
                 spinTime = 0;
-                spinTimeTotal = Math.random() * 3 + 4 * 1000;
+                spinTimeTotal = Math.random() + 10 * 1000;
                 rotateWheel();
             }
 
@@ -284,7 +282,7 @@
 
                 // Set the result image
                 var result = document.getElementById("result");
-                result.setAttribute("src", god.card);
+                result.setAttribute("src", god.card.replace("'", ""));
                 result.setAttribute("alt", god.name);
 
                 var name = document.getElementById("name");
