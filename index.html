@@ -8,7 +8,16 @@
         <title>SmiteWheel</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body id="main">
+        <div class="row">
+            <div class="col-2-sm"></div>
+            <div class="col-6-sm">
+                <center>
+                    <input type="button" id="darkmode" value="Dark Mode"/>
+                </center>
+            </div>
+            <div class="col-4-sm"></div>
+        </div>
         <div class="row">
             <div class="col-2-sm">
                 <div class="row">
@@ -94,6 +103,8 @@
 
             var ctx;
 
+            var darkmodeOn = false;
+
             // Register event listeners
             var spinner = document.getElementById("spin");
             spinner.addEventListener("click", spin);
@@ -111,6 +122,23 @@
             tiggz.addEventListener("click", enableTiggzMode);
             var reset = document.getElementById("reset");
             reset.addEventListener("click", clear);
+            var toggleDark = document.getElementById("darkmode");
+            toggleDark.addEventListener("click", toggleDarkmode);
+
+            function toggleDarkmode() {
+                var body = document.getElementById("main");
+                if (darkmodeOn) {
+                    body.style.backgroundColor = "#ffffff";
+                    body.style.color = "#000000";
+                    darkmodeOn = false
+                    toggleDark.setAttribute("value", "Dark Mode");
+                } else {
+                    body.style.backgroundColor = "#474747";
+                    body.style.color = "#dbdbdb";
+                    darkmodeOn = true;
+                    toggleDark.setAttribute("value", "Light Mode");
+                }
+            }
 
             function getFreshGods() {
                 // Fetching the list of Gods straight from the source, means it's never out of date ;)
@@ -119,6 +147,7 @@
                 xmlHttp.send(null);
                 var resp = xmlHttp.responseText;
                 var decodedBody = JSON.parse(resp);
+                // Loop through and shuffle the array of gods, so they aren't alphabetical
                 for(var i = (decodedBody.length - 1 ); i > 0; i--){
                     const j = Math.floor(Math.random() * i)
                     const temp = decodedBody[i]
