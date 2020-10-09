@@ -245,7 +245,7 @@
                 options = getFreshGods();
                 toFilter = e.target.id;
                 options = options.filter(function(god) {
-                    return god.role === " "+toFilter;
+                    return god.role === toFilter;
                 })
                 drawRouletteWheel();
             }
