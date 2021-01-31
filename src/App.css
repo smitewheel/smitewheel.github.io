@@ -1,38 +1,191 @@
+body {
+  background-color: #131516;
+  color:rgb(126, 126, 126);
+  height: 900px;
+}
+
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.banner {
+  width: 100%;
+  height: 100px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.slot {
+  position: relative;
+  display: inline-block;
+  margin-top: 2%;
+  height: 200px;
+  width: 240px;
+}
+
+section {
+  position: absolute;
+  border-radius: 15px !important;
+  border: 3px solid rgb(126, 126, 126) !important;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background-color: grey;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 25px;
+  line-height: 60px;
+  cursor: default;
+}
+
+.container {
+  position: absolute;
+  top: 2px;
+  width: 100%;
+  transition: top ease-in-out 0.5s;
+  text-align: center;
+}
+
+.roll {
+  width: 215px;
+  cursor: pointer;
+  background-color: rgb(54, 134, 0);
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 3px solid rgb(126, 126, 126);
+  color:rgb(219, 219, 219)
+}
+
+.rolling {
+  background-color:rgb(126, 126, 126);
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 3px solid rgb(126, 126, 126);
+  animation: blinkingText 1.2s infinite;
+}
+
+.godCard {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.options button {
+  border: none;
+  background-color: #131516;
+}
+
+button:focus {
+  outline: 0;
+}
+
+#activeButton {
+  display: inline-flex;
+  margin-left: 1%;
+  margin-right: 1%;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: 3px solid rgb(251, 255, 0);
+}
+
+.teamButtons {
+  display: inline-flex;
+  margin-left: 1%;
+  margin-right: 1%;
+  cursor: pointer;
+  background-color: rgb(54, 134, 0);
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: 3px solid rgb(126, 126, 126);
+  color:rgb(219, 219, 219)
+}
+
+.roundedIcon {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-color: #131516;
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+  border:none;
+}
+
+.refreshIcon {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-color: rgb(126, 126, 126);
+  width: 60px;
+  height: 60px;
+  border-radius: 75px;
+  border:none;
+}
+
+.activeFilter {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-color: #131516;
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+  border: 1px solid rgb(251, 255, 0);
+}
+
+.godCheckList {
+  margin:30px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  padding: 5px;
+  border: 1px solid rgb(126, 126, 126)
+}
+
+.godCheckList > div {
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 5px;
+}
+
+.givemesomespace {
+  margin-top: 5%;
+}
+
+.winner {
+  position: absolute;
+  bottom:0;
+  background-color: rgb(19, 60, 114);
+  text-align: center;
+  width: 200px;
+  height: 50px;
+}
+
+
+@keyframes blinkingText {
+  0% {
+    color:rgb(219, 219, 219);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  49% {
+    color:rgb(219, 219, 219);
   }
-  to {
-    transform: rotate(360deg);
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color:rgb(219, 219, 219);
   }
 }
