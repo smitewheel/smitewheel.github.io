@@ -51,6 +51,7 @@ const SlotContainer = () => {
     }
 
     const handleSlotsChange = (e, n) => {
+        setWinners({})
         slotRefs.current = slotRefs.current.splice(0, n)
         for ( let i = 0; i < n; i++) {
             slotRefs.current[i] = slotRefs.current[i] || React.createRef()
