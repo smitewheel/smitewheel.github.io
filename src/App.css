@@ -4,6 +4,13 @@ body {
   height: 900px;
 }
 
+ul {
+  list-style-type: none;
+}
+li {
+  list-style-type: none;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -188,4 +195,142 @@ button:focus {
   100% {
     color:rgb(219, 219, 219);
   }
+}
+
+.sidebarSticky {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  clear: both;
+}
+
+.optionsMenu {
+  margin-top: 2%;
+  padding: 5%;
+  border: 1px solid rgb(73, 206, 240);
+  border-radius: 20px;
+  height: 500px;
+}
+
+.cogWheelButton {
+  display: inline-flex;
+  margin-left: 1%;
+  margin-right: 1%;
+  cursor: pointer;
+  background-color: rgb(73, 206, 240);
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 20px;
+  border: 3px solid rgb(126, 126, 126);
+  color:rgb(219, 219, 219)
+}
+
+.closeButton {
+  display: inline-flex;
+  margin-left: 1%;
+  margin-right: 1%;
+  cursor: pointer;
+  background-color: rgb(134, 27, 0);
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 20px;
+  border: 3px solid rgb(126, 126, 126);
+  color:rgb(219, 219, 219)
+}
+
+/* Tooltip https://www.w3schools.com/css/css_tooltip.asp*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  top: -5px;
+  left: 105%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* https://www.w3schools.com/howto/howto_css_switch.asp */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color:  rgb(54, 134, 0);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(54, 134, 0);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

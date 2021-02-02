@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { getAllGods } from '../helpers/helpers'
 import Slot from '../components/Slot'
 import SlotOptions from '../components/SlotOptions'
+import SidebarOptions from '../components/SidebarOptions'
 import tiggzMode from '../helpers/tiggzMode.json'
 
 // Resizing the React DOM Ref array reference
@@ -18,6 +19,10 @@ const SlotContainer = () => {
     const [winners, setWinners] = useState([])
     const [filter, setFilter] = useState(null)
     const [filteredList, setFilteredList] = useState([])
+    const [sidebarOpen, setSidebarOpen] = useState(false)
+    const [sidebarOptions, setSidebarOptions] = useState({
+        allow_multiples: false
+    })
 
     let slotRefs = useRef([React.createRef()])
 
@@ -25,7 +30,15 @@ const SlotContainer = () => {
         if (shouldReload) {
             getAllGods()
             .then((response) => {
-                setGodsList(response.data)
+                let shuffled = response.data
+                // Loop through and shuffle the array of gods, so they aren't alphabetical
+                for(var i = (shuffled.length - 1 ); i > 0; i--){
+                    const j = Math.floor(Math.random() * i)
+                    const temp = shuffled[i]
+                    shuffled[i] = shuffled[j]
+                    shuffled[j] = temp
+                }
+                setGodsList(shuffled)
             })
             .catch((error) => {
                 console.log(error)
@@ -35,6 +48,10 @@ const SlotContainer = () => {
     }, [shouldReload])
 
     useEffect(() => {}, [slots, filter])
+
+    const hasOptionsEnabled = () => {
+        return Object.values(sidebarOptions).some((b) => b === true)
+    }
 
     const renderSlots = (n) => {
         return [...Array(n)].map((e, i) => 
@@ -74,8 +91,17 @@ const SlotContainer = () => {
         }
     }
 
+    const handleSetSidebarOptions = (e) => {
+        let { name, checked} = e.target
+        setSidebarOptions({
+            ...sidebarOptions,
+            [name]: checked,
+        })
+    }
+
     const roll = () => {
         setRolling(true)
+        setSidebarOpen(false)
         setWinners({})
         setTimeout(() => {
             setRolling(false)
@@ -83,9 +109,11 @@ const SlotContainer = () => {
         let chosen = []
         slotRefs.current.forEach((slot, i) => {
             let selected = triggerSlotRotation(slot.current)
-            // re-rotate if god already chosen
-            while (chosen.some((obj) => obj.name === selected.name)) {
-                selected = triggerSlotRotation(slot.current)
+            if (!sidebarOptions.allow_multiples){
+                // re-rotate if god already chosen
+                while (chosen.some((obj) => obj.name === selected.name)) {
+                    selected = triggerSlotRotation(slot.current)
+                }
             }
             chosen[i] = selected
         })
@@ -105,9 +133,15 @@ const SlotContainer = () => {
         setTop(-chosenOption.offsetTop + 2)
         return optionList[randomOption]
     }
-    
+
     return (
         <>
+            <SidebarOptions props={{
+                sidebarOpen,
+                setSidebarOpen,
+                sidebarOptions,
+                handleSetSidebarOptions
+            }}/>
             <SlotOptions props={{filter, handleSetFilter}}/>
             <div className="SlotMachine">
                 {renderSlots(slots)}
@@ -120,6 +154,20 @@ const SlotContainer = () => {
                     <button id={slots === 5 ? 'activeButton' : ''} className="teamButtons" onClick={(e) => handleSlotsChange(e, 5)}>5v5</button>
                 </span>
                 <div className="givemesomespace">
+                    {hasOptionsEnabled() && (
+                        <p>
+                            <i>Extra options enabled:</i>
+                            <ul>
+                            {Object.entries(sidebarOptions).map((keyName, idx) => {
+                                return (
+                                    <li>
+                                        <i key={idx}>{keyName}</i>
+                                    </li>
+                                )
+                            })}
+                            </ul>
+                        </p>
+                    )}
                     <button
                         className={rolling ? 'rolling' : 'roll'}
                         onClick={!rolling && roll || undefined}
