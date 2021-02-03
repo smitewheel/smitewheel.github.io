@@ -1,7 +1,6 @@
 body {
   background-color: #131516;
   color:rgb(126, 126, 126);
-  height: 900px;
 }
 
 ul {
@@ -167,6 +166,7 @@ button:focus {
 
 .givemesomespace {
   margin-top: 5%;
+  margin-bottom: 10%;
 }
 
 .winner {
@@ -197,32 +197,30 @@ button:focus {
   }
 }
 
-.sidebarSticky {
-  position: absolute;
-  left: 5%;
-  top: 5%;
-  clear: both;
-}
-
 .optionsMenu {
-  margin-top: 2%;
-  padding: 5%;
+  width: 30%;
+  padding: 1%;
+  margin-bottom: 1%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid rgb(73, 206, 240);
   border-radius: 20px;
-  height: 500px;
 }
 
 .cogWheelButton {
   display: inline-flex;
   margin-left: 1%;
   margin-right: 1%;
+  margin-bottom: 1%;
+  margin-top: 1%;
   cursor: pointer;
   background-color: rgb(73, 206, 240);
   padding: 10px;
   font-size: 24px;
   text-align: center;
   border-radius: 20px;
-  border: 3px solid rgb(126, 126, 126);
+  border: 1px solid rgb(126, 126, 126);
   color:rgb(219, 219, 219)
 }
 
@@ -230,6 +228,8 @@ button:focus {
   display: inline-flex;
   margin-left: 1%;
   margin-right: 1%;
+  margin-bottom: 1%;
+  margin-top: 1%;
   cursor: pointer;
   background-color: rgb(134, 27, 0);
   padding: 10px;
@@ -238,6 +238,10 @@ button:focus {
   border-radius: 20px;
   border: 3px solid rgb(126, 126, 126);
   color:rgb(219, 219, 219)
+}
+
+.notAllowed {
+  cursor: not-allowed !important;
 }
 
 /* Tooltip https://www.w3schools.com/css/css_tooltip.asp*/
@@ -333,4 +337,8 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 1px !important;
 }

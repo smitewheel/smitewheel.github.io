@@ -137,6 +137,7 @@ const SlotContainer = () => {
     return (
         <>
             <SidebarOptions props={{
+                slots,
                 sidebarOpen,
                 setSidebarOpen,
                 sidebarOptions,

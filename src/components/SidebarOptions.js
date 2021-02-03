@@ -8,6 +8,7 @@ const renderHTML = (rawHTML) =>
 
 const SidebarOptions = ({props}) => {
     const {
+        slots,
         sidebarOpen,
         setSidebarOpen,
         sidebarOptions,
@@ -17,12 +18,12 @@ const SidebarOptions = ({props}) => {
 
 
     return (
-        <div className="sidebarSticky">
+        <>
             <button className={sidebarOpen ? 'closeButton' : 'cogWheelButton'}
                 onClick={()=>setSidebarOpen(!sidebarOpen)}>
                 <>
                     {/* HTML codes for - X icon / Gear icon */}
-                    {sidebarOpen ? renderHTML('&#9747;'): renderHTML('&#9881;')}
+                    {sidebarOpen ? renderHTML('&#9747; Close') : renderHTML('&#9881;  Options')}
                 </>
             </button>
             {sidebarOpen && (
@@ -35,16 +36,17 @@ const SidebarOptions = ({props}) => {
                     </label><br/>
                     <label className="switch">
                         <input
+                            disabled={slots === 1}
                             type="checkbox"
                             name="allow_multiples"
                             checked={sidebarOptions.allow_multiples}
                             onChange={(e) => handleSetSidebarOptions(e)}
                         />
-                        <span className="slider round"></span>
+                        <span className={slots === 1 ? 'slider round notAllowed' : 'slider round'}></span>
                     </label>
                 </div>
             )}
-        </div>
+        </>
     )
 }
 
