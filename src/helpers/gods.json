@@ -1,0 +1,612 @@
+[
+  {
+    "name": "Achilles",
+    "role": "Warrior",
+    "card": "achilles.jpg"
+  },
+  {
+    "name": "Agni",
+    "role": "Mage",
+    "card": "agni.jpg"
+  },
+  {
+    "name": "Ah Muzen Cab",
+    "role": "Hunter",
+    "card": "ah-muzen-cab.jpg"
+  },
+  {
+    "name": "Ah Puch",
+    "role": "Mage",
+    "card": "ah-puch.jpg"
+  },
+  {
+    "name": "Amaterasu",
+    "role": "Warrior",
+    "card": "amaterasu.jpg"
+  },
+  {
+    "name": "Anhur",
+    "role": "Hunter",
+    "card": "anhur.jpg"
+  },
+  {
+    "name": "Anubis",
+    "role": "Mage",
+    "card": "anubis.jpg"
+  },
+  {
+    "name": "Ao Kuang",
+    "role": "Mage",
+    "card": "ao-kuang.jpg"
+  },
+  {
+    "name": "Aphrodite",
+    "role": "Mage",
+    "card": "aphrodite.jpg"
+  },
+  {
+    "name": "Apollo",
+    "role": "Hunter",
+    "card": "apollo.jpg"
+  },
+  {
+    "name": "Arachne",
+    "role": "Assassin",
+    "card": "arachne.jpg"
+  },
+  {
+    "name": "Ares",
+    "role": "Guardian",
+    "card": "ares.jpg"
+  },
+  {
+    "name": "Artemis",
+    "role": "Hunter",
+    "card": "artemis.jpg"
+  },
+  {
+    "name": "Artio",
+    "role": "Guardian",
+    "card": "artio.jpg"
+  },
+  {
+    "name": "Athena",
+    "role": "Guardian",
+    "card": "athena.jpg"
+  },
+  {
+    "name": "Atlas",
+    "role": "Guardian",
+    "card": "atlas.jpg"
+  },
+  {
+    "name": "Awilix",
+    "role": "Assassin",
+    "card": "awilix.jpg"
+  },
+  {
+    "name": "Baba Yaga",
+    "role": "Mage",
+    "card": "baba-yaga.jpg"
+  },
+  {
+    "name": "Bacchus",
+    "role": "Guardian",
+    "card": "bacchus.jpg"
+  },
+  {
+    "name": "Bakasura",
+    "role": "Assassin",
+    "card": "bakasura.jpg"
+  },
+  {
+    "name": "Baron Samedi",
+    "role": "Mage",
+    "card": "baron-samedi.jpg"
+  },
+  {
+    "name": "Bastet",
+    "role": "Assassin",
+    "card": "bastet.jpg"
+  },
+  {
+    "name": "Bellona",
+    "role": "Warrior",
+    "card": "bellona.jpg"
+  },
+  {
+    "name": "Cabrakan",
+    "role": "Guardian",
+    "card": "cabrakan.jpg"
+  },
+  {
+    "name": "Camazotz",
+    "role": "Assassin",
+    "card": "camazotz.jpg"
+  },
+  {
+    "name": "Cerberus",
+    "role": "Guardian",
+    "card": "cerberus.jpg"
+  },
+  {
+    "name": "Cernunnos",
+    "role": "Hunter",
+    "card": "cernunnos.jpg"
+  },
+  {
+    "name": "Chaac",
+    "role": "Warrior",
+    "card": "chaac.jpg"
+  },
+  {
+    "name": "Chang'e",
+    "role": "Mage",
+    "card": "change.jpg"
+  },
+  {
+    "name": "Charybdis",
+    "role": "Hunter",
+    "card": "charybdis.jpg"
+  },
+  {
+    "name": "Chernobog",
+    "role": "Hunter",
+    "card": "chernobog.jpg"
+  },
+  {
+    "name": "Chiron",
+    "role": "Hunter",
+    "card": "chiron.jpg"
+  },
+  {
+    "name": "Chronos",
+    "role": "Mage",
+    "card": "chronos.jpg"
+  },
+  {
+    "name": "Cliodhna",
+    "role": "Assassin",
+    "card": "cliodhna.jpg"
+  },
+  {
+    "name": "Cthulhu",
+    "role": "Guardian",
+    "card": "cthulhu.jpg"
+  },
+  {
+    "name": "Cu Chulainn",
+    "role": "Warrior",
+    "card": "cu-chulainn.jpg"
+  },
+  {
+    "name": "Cupid",
+    "role": "Hunter",
+    "card": "cupid.jpg"
+  },
+  {
+    "name": "Da Ji",
+    "role": "Assassin",
+    "card": "da-ji.jpg"
+  },
+  {
+    "name": "Danzaburou",
+    "role": "Hunter",
+    "card": "danzaburou.jpg"
+  },
+  {
+    "name": "Discordia",
+    "role": "Mage",
+    "card": "discordia.jpg"
+  },
+  {
+    "name": "Erlang Shen",
+    "role": "Warrior",
+    "card": "erlang-shen.jpg"
+  },
+  {
+    "name": "Eset",
+    "role": "Mage",
+    "card": "eset.jpg"
+  },
+  {
+    "name": "Fafnir",
+    "role": "Guardian",
+    "card": "fafnir.jpg"
+  },
+  {
+    "name": "Fenrir",
+    "role": "Assassin",
+    "card": "fenrir.jpg"
+  },
+  {
+    "name": "Freya",
+    "role": "Mage",
+    "card": "freya.jpg"
+  },
+  {
+    "name": "Ganesha",
+    "role": "Guardian",
+    "card": "ganesha.jpg"
+  },
+  {
+    "name": "Geb",
+    "role": "Guardian",
+    "card": "geb.jpg"
+  },
+  {
+    "name": "Gilgamesh",
+    "role": "Warrior",
+    "card": "gilgamesh.jpg"
+  },
+  {
+    "name": "Guan Yu",
+    "role": "Warrior",
+    "card": "guan-yu.jpg"
+  },
+  {
+    "name": "Hachiman",
+    "role": "Hunter",
+    "card": "hachiman.jpg"
+  },
+  {
+    "name": "Hades",
+    "role": "Mage",
+    "card": "hades.jpg"
+  },
+  {
+    "name": "He Bo",
+    "role": "Mage",
+    "card": "he-bo.jpg"
+  },
+  {
+    "name": "Heimdallr",
+    "role": "Hunter",
+    "card": "heimdallr.jpg"
+  },
+  {
+    "name": "Hel",
+    "role": "Mage",
+    "card": "hel.jpg"
+  },
+  {
+    "name": "Hera",
+    "role": "Mage",
+    "card": "hera.jpg"
+  },
+  {
+    "name": "Hercules",
+    "role": "Warrior",
+    "card": "hercules.jpg"
+  },
+  {
+    "name": "Horus",
+    "role": "Warrior",
+    "card": "horus.jpg"
+  },
+  {
+    "name": "Hou Yi",
+    "role": "Hunter",
+    "card": "hou-yi.jpg"
+  },
+  {
+    "name": "Hun Batz",
+    "role": "Assassin",
+    "card": "hun-batz.jpg"
+  },
+  {
+    "name": "Ishtar",
+    "role": "Hunter",
+    "card": "ishtar.jpg"
+  },
+  {
+    "name": "Izanami",
+    "role": "Hunter",
+    "card": "izanami.jpg"
+  },
+  {
+    "name": "Janus",
+    "role": "Mage",
+    "card": "janus.jpg"
+  },
+  {
+    "name": "Jing Wei",
+    "role": "Hunter",
+    "card": "jing-wei.jpg"
+  },
+  {
+    "name": "Jormungandr",
+    "role": "Guardian",
+    "card": "jormungandr.jpg"
+  },
+  {
+    "name": "Kali",
+    "role": "Assassin",
+    "card": "kali.jpg"
+  },
+  {
+    "name": "Khepri",
+    "role": "Guardian",
+    "card": "khepri.jpg"
+  },
+  {
+    "name": "King Arthur",
+    "role": "Warrior",
+    "card": "king-arthur.jpg"
+  },
+  {
+    "name": "Kukulkan",
+    "role": "Mage",
+    "card": "kukulkan.jpg"
+  },
+  {
+    "name": "Kumbhakarna",
+    "role": "Guardian",
+    "card": "kumbhakarna.jpg"
+  },
+  {
+    "name": "Kuzenbo",
+    "role": "Guardian",
+    "card": "kuzenbo.jpg"
+  },
+  {
+    "name": "Lancelot",
+    "role": "Assassin",
+    "card": "lancelot.jpg"
+  },
+  {
+    "name": "Loki",
+    "role": "Assassin",
+    "card": "loki.jpg"
+  },
+  {
+    "name": "Medusa",
+    "role": "Hunter",
+    "card": "medusa.jpg"
+  },
+  {
+    "name": "Mercury",
+    "role": "Assassin",
+    "card": "mercury.jpg"
+  },
+  {
+    "name": "Merlin",
+    "role": "Mage",
+    "card": "merlin.jpg"
+  },
+  {
+    "name": "Morgan Le Fay",
+    "role": "Mage",
+    "card": "morgan-le-fay.jpg"
+  },
+  {
+    "name": "Mulan",
+    "role": "Warrior",
+    "card": "mulan.jpg"
+  },
+  {
+    "name": "Ne Zha",
+    "role": "Assassin",
+    "card": "ne-zha.jpg"
+  },
+  {
+    "name": "Neith",
+    "role": "Hunter",
+    "card": "neith.jpg"
+  },
+  {
+    "name": "Nemesis",
+    "role": "Assassin",
+    "card": "nemesis.jpg"
+  },
+  {
+    "name": "Nike",
+    "role": "Warrior",
+    "card": "nike.jpg"
+  },
+  {
+    "name": "Nox",
+    "role": "Mage",
+    "card": "nox.jpg"
+  },
+  {
+    "name": "Nu Wa",
+    "role": "Mage",
+    "card": "nu-wa.jpg"
+  },
+  {
+    "name": "Odin",
+    "role": "Warrior",
+    "card": "odin.jpg"
+  },
+  {
+    "name": "Olorun",
+    "role": "Mage",
+    "card": "olorun.jpg"
+  },
+  {
+    "name": "Osiris",
+    "role": "Warrior",
+    "card": "osiris.jpg"
+  },
+  {
+    "name": "Pele",
+    "role": "Assassin",
+    "card": "pele.jpg"
+  },
+  {
+    "name": "Persephone",
+    "role": "Mage",
+    "card": "persephone.jpg"
+  },
+  {
+    "name": "Poseidon",
+    "role": "Mage",
+    "card": "poseidon.jpg"
+  },
+  {
+    "name": "Ra",
+    "role": "Mage",
+    "card": "ra.jpg"
+  },
+  {
+    "name": "Raijin",
+    "role": "Mage",
+    "card": "raijin.jpg"
+  },
+  {
+    "name": "Rama",
+    "role": "Hunter",
+    "card": "rama.jpg"
+  },
+  {
+    "name": "Ratatoskr",
+    "role": "Assassin",
+    "card": "ratatoskr.jpg"
+  },
+  {
+    "name": "Ravana",
+    "role": "Assassin",
+    "card": "ravana.jpg"
+  },
+  {
+    "name": "Scylla",
+    "role": "Mage",
+    "card": "scylla.jpg"
+  },
+  {
+    "name": "Serqet",
+    "role": "Assassin",
+    "card": "serqet.jpg"
+  },
+  {
+    "name": "Set",
+    "role": "Assassin",
+    "card": "set.jpg"
+  },
+  {
+    "name": "Shiva",
+    "role": "Warrior",
+    "card": "shiva.jpg"
+  },
+  {
+    "name": "Skadi",
+    "role": "Hunter",
+    "card": "skadi.jpg"
+  },
+  {
+    "name": "Sobek",
+    "role": "Guardian",
+    "card": "sobek.jpg"
+  },
+  {
+    "name": "Sol",
+    "role": "Mage",
+    "card": "sol.jpg"
+  },
+  {
+    "name": "Sun Wukong",
+    "role": "Warrior",
+    "card": "sun-wukong.jpg"
+  },
+  {
+    "name": "Susano",
+    "role": "Assassin",
+    "card": "susano.jpg"
+  },
+  {
+    "name": "Sylvanus",
+    "role": "Guardian",
+    "card": "sylvanus.jpg"
+  },
+  {
+    "name": "Terra",
+    "role": "Guardian",
+    "card": "terra.jpg"
+  },
+  {
+    "name": "Thanatos",
+    "role": "Assassin",
+    "card": "thanatos.jpg"
+  },
+  {
+    "name": "The Morrigan",
+    "role": "Mage",
+    "card": "the-morrigan.jpg"
+  },
+  {
+    "name": "Thor",
+    "role": "Assassin",
+    "card": "thor.jpg"
+  },
+  {
+    "name": "Thoth",
+    "role": "Mage",
+    "card": "thoth.jpg"
+  },
+  {
+    "name": "Tiamat",
+    "role": "Mage",
+    "card": "tiamat.jpg"
+  },
+  {
+    "name": "Tsukuyomi",
+    "role": "Assassin",
+    "card": "tsukuyomi.jpg"
+  },
+  {
+    "name": "Tyr",
+    "role": "Warrior",
+    "card": "tyr.jpg"
+  },
+  {
+    "name": "Ullr",
+    "role": "Hunter",
+    "card": "ullr.jpg"
+  },
+  {
+    "name": "Vamana",
+    "role": "Warrior",
+    "card": "vamana.jpg"
+  },
+  {
+    "name": "Vulcan",
+    "role": "Mage",
+    "card": "vulcan.jpg"
+  },
+  {
+    "name": "Xbalanque",
+    "role": "Hunter",
+    "card": "xbalanque.jpg"
+  },
+  {
+    "name": "Xing Tian",
+    "role": "Guardian",
+    "card": "xing-tian.jpg"
+  },
+  {
+    "name": "Yemoja",
+    "role": "Guardian",
+    "card": "yemoja.jpg"
+  },
+  {
+    "name": "Ymir",
+    "role": "Guardian",
+    "card": "ymir.jpg"
+  },
+  {
+    "name": "Yu Huang",
+    "role": "Mage",
+    "card": "yu-huang.jpg"
+  },
+  {
+    "name": "Zeus",
+    "role": "Mage",
+    "card": "zeus.jpg"
+  },
+  {
+    "name": "Zhong Kui",
+    "role": "Mage",
+    "card": "zhong-kui.jpg"
+  }
+]
