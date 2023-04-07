@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.54caccd8.chunk.css",
-    "main.js": "/static/js/main.39575601.chunk.js",
-    "main.js.map": "/static/js/main.39575601.chunk.js.map",
+    "main.js": "/static/js/main.554ac7b7.chunk.js",
+    "main.js.map": "/static/js/main.554ac7b7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c0b3dca2.js",
     "runtime-main.js.map": "/static/js/runtime-main.c0b3dca2.js.map",
     "static/js/2.e6ba3a83.chunk.js": "/static/js/2.e6ba3a83.chunk.js",
@@ -88,6 +88,7 @@
     "static/media/kuzenbo.jpg": "/static/media/kuzenbo.ddd033d0.jpg",
     "static/media/lancelot.jpg": "/static/media/lancelot.5bf02837.jpg",
     "static/media/loki.jpg": "/static/media/loki.3e03cf5c.jpg",
+    "static/media/martichoras.jpg": "/static/media/martichoras.a0d468cf.jpg",
     "static/media/maui.jpg": "/static/media/maui.2988fd6d.jpg",
     "static/media/medusa.jpg": "/static/media/medusa.0a09ea1a.jpg",
     "static/media/mercury.jpg": "/static/media/mercury.2887a714.jpg",
@@ -145,6 +146,6 @@
     "static/js/runtime-main.c0b3dca2.js",
     "static/js/2.e6ba3a83.chunk.js",
     "static/css/main.54caccd8.chunk.css",
-    "static/js/main.39575601.chunk.js"
+    "static/js/main.554ac7b7.chunk.js"
   ]
 }
