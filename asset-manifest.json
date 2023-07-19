@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.54caccd8.chunk.css",
-    "main.js": "/static/js/main.554ac7b7.chunk.js",
-    "main.js.map": "/static/js/main.554ac7b7.chunk.js.map",
+    "main.js": "/static/js/main.cf77de4f.chunk.js",
+    "main.js.map": "/static/js/main.cf77de4f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c0b3dca2.js",
     "runtime-main.js.map": "/static/js/runtime-main.c0b3dca2.js.map",
     "static/js/2.e6ba3a83.chunk.js": "/static/js/2.e6ba3a83.chunk.js",
@@ -28,7 +28,7 @@
     "static/media/apollo.jpg": "/static/media/apollo.694af3d9.jpg",
     "static/media/arachne.jpg": "/static/media/arachne.9af8c8ad.jpg",
     "static/media/ares.jpg": "/static/media/ares.f25f7079.jpg",
-    "static/media/artemis.jpg": "/static/media/artemis.8d76e12c.jpg",
+    "static/media/artemis.jpg": "/static/media/artemis.40e2e558.jpg",
     "static/media/artio.jpg": "/static/media/artio.c9384b2e.jpg",
     "static/media/athena.jpg": "/static/media/athena.91997870.jpg",
     "static/media/atlas.jpg": "/static/media/atlas.de71f8b1.jpg",
@@ -45,6 +45,7 @@
     "static/media/cernunnos.jpg": "/static/media/cernunnos.654aa27e.jpg",
     "static/media/chaac.jpg": "/static/media/chaac.90bd00f4.jpg",
     "static/media/change.jpg": "/static/media/change.dc6344fe.jpg",
+    "static/media/charon.jpg": "/static/media/charon.297bb39f.jpg",
     "static/media/charybdis.jpg": "/static/media/charybdis.e35be267.jpg",
     "static/media/chernobog.jpg": "/static/media/chernobog.fd3eb7fc.jpg",
     "static/media/chiron.jpg": "/static/media/chiron.3c29d844.jpg",
@@ -76,6 +77,7 @@
     "static/media/hou-yi.jpg": "/static/media/hou-yi.39979e39.jpg",
     "static/media/hun-batz.jpg": "/static/media/hun-batz.f530b35a.jpg",
     "static/media/ishtar.jpg": "/static/media/ishtar.de39a3ea.jpg",
+    "static/media/ix-chel.jpg": "/static/media/ix-chel.1f241253.jpg",
     "static/media/izanami.jpg": "/static/media/izanami.169ea2f6.jpg",
     "static/media/janus.jpg": "/static/media/janus.855bd633.jpg",
     "static/media/jing-wei.jpg": "/static/media/jing-wei.6bbdb52d.jpg",
@@ -146,6 +148,6 @@
     "static/js/runtime-main.c0b3dca2.js",
     "static/js/2.e6ba3a83.chunk.js",
     "static/css/main.54caccd8.chunk.css",
-    "static/js/main.554ac7b7.chunk.js"
+    "static/js/main.cf77de4f.chunk.js"
   ]
 }
