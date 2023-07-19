@@ -145,6 +145,11 @@
     "card": "change.jpg"
   },
   {
+    "name": "Charon",
+    "role": "Guardian",
+    "card": "charon.jpg"
+  },
+  {
     "name": "Charybdis",
     "role": "Hunter",
     "card": "charybdis.jpg"
@@ -298,6 +303,11 @@
     "name": "Ishtar",
     "role": "Hunter",
     "card": "ishtar.jpg"
+  },
+  {
+    "name": "Ix Chel",
+    "role": "Mage",
+    "card": "ix-chel.jpg"
   },
   {
     "name": "Izanami",
