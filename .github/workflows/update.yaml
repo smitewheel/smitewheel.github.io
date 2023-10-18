@@ -1,0 +1,28 @@
+on:
+  workflow_dispatch: # manually
+  schedule:
+    - cron: '0 0 * * 0' # at 00:00 every Sunday
+
+jobs:
+  check-for-new-gods:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '^1.19'
+      - name: Configure Git
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Run God Update
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          go run main.go
+          git diff --quiet || (git add . && git commit -m "updated with new god")
+          git push
