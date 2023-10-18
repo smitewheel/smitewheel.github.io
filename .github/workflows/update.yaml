@@ -22,5 +22,16 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           go run main.go
-          git diff --quiet || (git add . && git commit -m "updated with new god")
-          git push
+          if git diff --quiet --exit-code; then
+            echo "::set-env name=has_changes::false"
+          else
+            echo "::set-env name=has_changes::true"
+          fi
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        if: ${{ env.has_changes == 'true' }}
+        with:
+          commit-message: updated with new god
+          title: Updated with new God ':eyes:' @bshore
+          body: Updated with new God ':eyes:' @bshore
+          branch: update-gods
